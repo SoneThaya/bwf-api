@@ -7,5 +7,5 @@ router = routers.DefaultRouter()
 router.register(r'groups', views.GroupViewset)
 
 urlpatterns = [
-    path(r'^', include(router.urls))
+    url(r'^', include(router.urls))
 ]
